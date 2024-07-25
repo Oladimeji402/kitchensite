@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2><span style="color: #D8120A; font-size: 3rem;">Q</span><span style="color: #DAE038; font-size: 3rem;">uad's Kitchen</span></h2>
+
+    <div class="input-section">
+        <label for="Name-select">Name:</label>
+        <select id="Name-select">
+            <option value="Jollof">Jollof</option>
+            <option value="friedRice">friedRice</option>
+            <option value="Dodo">Dodo</option>
+            <option value="Amala">Amala</option>
+            <option value="Ogbono">Ogbono</option>
+        </select>
+        <label for="location-select">Location:</label>
+        <select id="location-select">
+            <option value="Lagos">Lagos</option>
+            <option value="Ekiti">Ekiti</option>
+            <option value="Abuja">Abuja</option>
+            <option value="Ibadan">Ibadan</option>
+        </select>
+        <label for="amount-input">Amount:</label>
+        <input type="number" id="amount-input">
+        <button id="add-btn">Add</button>
+    </div>
+
+    <div class="table-list">
+        <div class="mid" id="total-body">
+            <label for="total-amount">Total:</label>
+            <input type="number" id="total-amount" readonly>
+        </div>
+       
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Location</th>  
+                    <th>Amount</th>
+                    <th>Quantity</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="expenses-table-body">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
